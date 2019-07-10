@@ -1,0 +1,28 @@
+
+<h2>Show All Employee</h2>
+<table border="1">
+    <tr>
+        <th>Employee Id</th>
+        <td><Input type="text" [(ngModel)]="empId" /></td>
+    </tr>
+
+    <tr>
+        <th>Employee Name</th>
+        <td>
+            <input type="text" [(ngModel)]="empName" />
+        </td></tr>
+        <tr>
+        <th>Employee Salary</th>
+        <td>
+            <input type="text" [(ngModel)]="empSalary" />
+        </td></tr>
+        <tr>
+        <th>Employee Department</th>
+        <input type="text" [(ngModel)]="empDepartment" />
+        </tr>
+        <tr>
+        <th> <input type="button" value="ADD" (click)="AddEmployee()"/></th>
+    </tr>
+<show-comp [empId1]="empId" [empName1]="empName" [empSalary1]="empSalary" [empDepartment1]="empdepartment1"></show-comp>
+   
+</table>
